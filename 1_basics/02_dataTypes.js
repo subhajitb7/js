@@ -9,6 +9,8 @@ let state;
 
 //string => ""
 //number => 2 to power 53
+//Bigint
+//symbol => unique
 //array 
 //object
 //boolean => true/false
