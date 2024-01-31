@@ -1,9 +1,16 @@
 // Dates
 
 let myDate = new Date()
-// console.log(myDate.toString());
+// console.log(myDate);
+//  console.log(myDate.toString());
 // console.log(myDate.toDateString());
 // console.log(myDate.toLocaleString());
+// console.log(myDate.toLocaleDateString());
+// console.log(myDate.toLocaleTimeString());
+// console.log(myDate.toISOString())
+// console.log(myDate.toJSON());
+// console.log(myDate.toUTCString());
+// console.log(myDate.toTimeString());
 // console.log(typeof myDate);
 
 // let myCreatedDate = new Date(2023, 0, 23)
@@ -12,6 +19,9 @@ let myDate = new Date()
 let myCreatedDate = new Date("01-14-2023")
 // console.log(myCreatedDate.toLocaleString());
 
+const utcDate1 = new Date(Date.UTC(2024, 1, 2, 3, 4, 5));
+console.log(utcDate1.toUTCString());
+
 let myTimeStamp = Date.now()
 
 // console.log(myTimeStamp);
@@ -19,9 +29,11 @@ let myTimeStamp = Date.now()
 // console.log(Math.floor(Date.now()/1000));
 
 let newDate = new Date()
-console.log(newDate);
+// console.log(newDate);
 console.log(newDate.getMonth() + 1);
 console.log(newDate.getDay());
+console.log(newDate.getSeconds());
+
 
 // `${newDate.getDay()} and the time `
 
