@@ -1,0 +1,31 @@
+const LuxuaryCar = ["Mercedes-Benz","Rolls Royice","Range Rover"]
+const economyCar = ["TATA","Mahindra","Volkswagon"]
+
+// LuxuaryCar.push(economyCar)
+// console.log(LuxuaryCar)
+
+const allCar = LuxuaryCar.concat(economyCar)
+// console.log(allCar)
+
+const allNewCars = [...LuxuaryCar, ...economyCar]
+// console.log(allNewCars)
+
+
+const arr = [3,5,6,7,[3,5,[4,0],1],87,65,[34,44],0]
+// const arr = [3,[3,5,6,7,[3,5,[4,0],1],87,65,[34,44],0],5,6,7,[3,5,[4,0],1],87,65,[34,44],0]
+// console.log(arr)
+
+// const anotherAr = arr.flat(2)
+const anotherArr = arr.flat(Infinity)
+// console.log(anotherArr)
+
+console.log(Array.isArray(arr))
+console.log(Array.isArray("Subhajit"))
+console.log(Array.from("Subhajit"))
+console.log(Array.from({name: "Subhajit"})) //interesting
+
+let bike1 = "BMW GSA 1250"
+let bike2 = "Royal Enfield Meteor 650"
+let bike3 = "KTM Adv 390"
+
+console.log(Array.of(bike1, bike2, bike3))
