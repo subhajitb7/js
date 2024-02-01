@@ -29,10 +29,26 @@ const myArray = new Array("Hi","hello", "namaste")
 // console.log(newArr);
 // console.log(typeof newArr);
 
+
+//Slice 
+
 const sliceArr = myArr.slice(1,4)
-console.log(sliceArr);
-console.log("Slice ",myArr);
+const sliceArr2 = myArr.slice(-5)
+// console.log(sliceArr);
+// console.log(sliceArr2);
+// console.log("Slice ",myArr);
+
+
+// Splice
 
 const spliceArr = myArr.splice(1,4)
 console.log(spliceArr);
 console.log("Splice ",myArr);
+
+const spliceArr2 = myArr.splice(1,0, 99)
+console.log(spliceArr2);
+console.log("Splice op",myArr);
+
+const spliceArr3 = myArr.splice(1,1)
+console.log(spliceArr3);
+console.log("Splice op",myArr);
