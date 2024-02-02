@@ -62,3 +62,15 @@ const ObjArr = [
 // console.log(Object.entries(jsUser))
 // console.log(jsUser.hasOwnProperty('isloggedin'))
 // console.log(jsUser.hasOwnProperty('islogged'))
+
+const course = {
+    courseName: "JavaScript Mastery",
+    coursePrice: "Free",
+    courseInstructor: "Subhajit"
+}
+
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+const {coursePrice: price} = course
+console.log(price);
