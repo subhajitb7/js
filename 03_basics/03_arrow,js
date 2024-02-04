@@ -1,0 +1,41 @@
+const user = {
+    userName: "Subhajit",
+    price: 999,
+    welcomeMsg: function(){
+        console.log(`${this.userName}, welcome`);
+        console.log(this);
+    }
+}
+// user.welcomeMsg()
+user.userName = "Alvarez"
+// user.welcomeMsg()
+
+console.log(this)
+
+// function chai() {
+//     let userName = "Subhajit"
+//     console.log(this.userName)
+// }
+
+// const chai = function () {
+//     let userName = "Subhajit"
+//     console.log(this.userName)
+// }
+
+const chai = () => {
+    let userName = "Subhajit"
+    console.log(this)
+}
+// chai()
+
+// const addTwo = (n1, n2) => {
+//     return n1+n2
+// }
+
+// const addTwo = (n1, n2) => n1+n2
+
+const addTwo = (n1, n2) => (n1+n2)
+// console.log(addTwo(2,4))
+
+const name = () => ({userName: "Subhajit"})
+console.log(name())
