@@ -14,7 +14,7 @@ let state;
 //array 
 //object
 //boolean => true/false
-//undefined => value is not defined
+//undefined =>  variable is declared but not assigned a value
 //null => standalone value
 
 console.log(typeof null) //object
